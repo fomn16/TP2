@@ -1,0 +1,23 @@
+Test suite test: RUNNING...
+
+Add
+  Add type
+    Evaluating operation
+      evaluates Add expression composed by Literals
+      evaluates Add expression composed by Literal and Add expression
+      evaluates Add expression composed by Add's expressions
+    Printing Operation
+      prints Add expression composed by Literals
+      prints Add expression composed by Literal and Add expression
+      prints Add expression composed by Add's expressions
+Literal
+  Literal type
+    evaluating operation
+      return integer value when called evaluate
+    Printing operation
+      return string of value when called printing
+
+Finished in 0.0003 seconds
+8 examples, 0 failures
+Test suite test: PASS
+Test suite logged to: dist/test/spl-0.1.0.0-test.log
