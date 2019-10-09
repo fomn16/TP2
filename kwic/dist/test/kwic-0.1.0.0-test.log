@@ -1,0 +1,25 @@
+Test suite test: RUNNING...
+
+All
+  All automated tests
+    IOModule
+      creates a file and returns its contents
+    StringOperatorsModule.unCapitalize
+      runs the function in a test string and verifies uncapitalization
+    StringOperatorsModule.lettersOnly
+      runs the function in a test string and verifies ausence of non letters
+    StringOperatorsModule.separateStringInLines
+      runs the function in a test string and verifies string list as output
+    StringOperatorsModule.removeWords
+      runs the function in a test string list and verifies string list with correct member and its location as output
+    ListOperatorsModule.secondTermsFromPair
+      runs the function in a test list of doubles and verifies list of second terms as output
+    ListOperatorsModule.quickSort
+      runs the function in a test list and verifies sorted list as output
+    ListOperatorsModule.separateInTerms
+      runs the function in a test list and verifies list separated in designated terms
+
+Finished in 0.0006 seconds
+8 examples, 0 failures
+Test suite test: PASS
+Test suite logged to: dist/test/kwic-0.1.0.0-test.log
