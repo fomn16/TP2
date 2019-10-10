@@ -2,7 +2,7 @@ module StringOperatorsModuleSpec (spec) where
 
 import Test.Hspec
 
-import StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
+import Modules.StringOperatorsModule.StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
 
 spec :: Spec
 spec = 

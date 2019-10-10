@@ -1,7 +1,7 @@
-module KwicModule (kwic) where
+module Modules.KwicModule.KwicModule (kwic) where
 
-import StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
-import ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
+import Modules.StringOperatorsModule.StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
+import Modules.ListOperatorsModule.ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
 
 --separa as linhas da primeira string de entrada e aplica process lines em cada uma, concatenando as saídas
 kwic :: String -> String -> String

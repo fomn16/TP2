@@ -2,7 +2,7 @@ module KwicModuleSpec (spec) where
 
 import Test.Hspec
 
-import KwicModule
+import Modules.KwicModule.KwicModule
 
 spec :: Spec
 spec = 

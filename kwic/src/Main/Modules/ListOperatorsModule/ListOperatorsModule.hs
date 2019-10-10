@@ -1,4 +1,4 @@
-module ListOperatorsModule
+module Modules.ListOperatorsModule.ListOperatorsModule
 (secondTermsFromPair
 ,quickSort
 ,removeCommonFromFirstList

@@ -1,4 +1,4 @@
-module StringOperatorsModule
+module Modules.StringOperatorsModule.StringOperatorsModule
 (unCapitalize
 ,lettersOnly
 ,separateStringInLines
@@ -7,7 +7,7 @@ module StringOperatorsModule
 
 import Data.Char (ord)
 import Data.Char (chr)
-import ListOperatorsModule (secondTermsFromPair, quickSort, removeCommonFromFirstList, separateInTerms)
+import Modules.ListOperatorsModule.ListOperatorsModule (secondTermsFromPair, quickSort, removeCommonFromFirstList, separateInTerms)
 
 
 --tem como saída a string de entrada com suas letras maiúsculas substituidas por minúsculas

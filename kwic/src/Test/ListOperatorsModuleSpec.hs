@@ -2,7 +2,7 @@ module ListOperatorsModuleSpec (spec) where
 
 import Test.Hspec
 
-import ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
+import Modules.ListOperatorsModule.ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
 
 spec :: Spec
 spec = 

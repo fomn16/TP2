@@ -1,7 +1,7 @@
 module Base where
 
-import KwicModule
-import IOModule
+import Modules.KwicModule.KwicModule
+import Modules.IOModule.IOModule
 
 main :: IO ()
 main = do {textContents <- input (Local "texto.txt")

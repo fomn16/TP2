@@ -49,11 +49,11 @@ cabal-version:       >=1.10
 library
   -- Modules exported by the library.
   exposed-modules:    Base, 
-                      IOModule,
-                      KwicModule,
-                      ListOperatorsModule,
-                      StringOperatorsModule
-    --other-modules:       
+                      Modules.IOModule.IOModule,
+                      Modules.KwicModule.KwicModule,
+                      Modules.ListOperatorsModule.ListOperatorsModule,
+                      Modules.StringOperatorsModule.StringOperatorsModule
+    --other-modules:  Modules.IOModule.IOModuleInterface
   
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:    

@@ -2,7 +2,7 @@ module IOModuleSpec (spec) where
 
 import Test.Hspec
 
-import IOModule
+import Modules.IOModule.IOModule
 
 spec :: Spec
 spec = 
