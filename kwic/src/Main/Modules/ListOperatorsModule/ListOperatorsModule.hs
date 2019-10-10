@@ -37,7 +37,7 @@ removeCommonFromFirstList (a:as) b i
     |elem a b = removeCommonFromFirstList as b (i+1)
     |otherwise = [(a,i)] ++ (removeCommonFromFirstList as b (i+1))
 
---organiza a lista fornecida em ordem alfabética, tem como saída apenas as posições que as palavras ocupavam na lista.
+--Ordena a lista em ordem crescente
 quickSort :: Ord t => [t] -> [t]
 quickSort [] = []
 quickSort (a:as) = (quickSort [b|b<-as, b<a]) ++ [a] ++ (quickSort [b|b<-as, b>a])

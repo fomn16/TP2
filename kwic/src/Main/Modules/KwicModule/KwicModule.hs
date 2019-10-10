@@ -3,6 +3,9 @@ module Modules.KwicModule.KwicModule (kwic) where
 import Modules.StringOperatorsModule.StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
 import Modules.ListOperatorsModule.ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
 
+import Modules.KwicModule.GenerateTextImplementations
+import Modules.KwicModule.GenerateTextInterface
+
 --separa as linhas da primeira string de entrada e aplica process lines em cada uma, concatenando as saídas
 kwic :: String -> String -> String
 kwic a b = apply processLines (separateStringInLines a) b
@@ -20,16 +23,3 @@ processLines textContents stopwordContents = generateText Default (secondTermsFr
         uncapitalizedText = map unCapitalize separatedText                      --  3 : retira letras maiúsculas das palavras do título substituindo-as por minúsculas
         stopwords = separateInTerms (filter (/= ' ') stopwordContents) [] ' '   --  2 : separa string de stopwords em palavras
         separatedText = separateInTerms textContents [] ' '                     --  1 : separa string do título em palavras
-
-data Default = Default
-
-class GenerateText a where
-    generateText :: a -> [Int] -> [String] -> Int -> Int -> String
-
---monta uma string dadas as localizações das palavras chave da string de origem, a string original, 0 e 0 respectivamente.
-instance GenerateText Default where
-    generateText Default [] _ _ _= ""
-    generateText Default (i:is) b 0 _ = (b !! i) ++ (generateText Default [i+1] b 1 (length b)) ++ "/" ++ (generateText Default [0] b 1 i) ++ "\n" ++ generateText Default is b 0 0
-    generateText Default [i] b 1 n --escreve o que vem entre as posições i e n na lista b
-        |i < n = " " ++ b !! i ++ generateText Default [i+1] b 1 n
-        |otherwise = ""
