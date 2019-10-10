@@ -19,7 +19,7 @@ All
     ListOperatorsModule.separateInTerms
       runs the function in a test list and verifies list separated in designated terms
 
-Finished in 0.0006 seconds
+Finished in 0.0004 seconds
 8 examples, 0 failures
 Test suite test: PASS
 Test suite logged to: dist/test/kwic-0.1.0.0-test.log

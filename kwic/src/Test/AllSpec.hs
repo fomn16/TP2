@@ -2,7 +2,7 @@ module AllSpec (spec) where
 
 import Test.Hspec
 
-import IOModule (inputFromFile, outputToFile)
+import IOModule
 import StringOperatorsModule (unCapitalize, lettersOnly, separateStringInLines, removeWords)
 import ListOperatorsModule (secondTermsFromPair, quickSort, separateInTerms)
 
@@ -11,8 +11,8 @@ spec =
   describe "All automated tests" $ do
     context "IOModule" $ do
       it "creates a file and returns its contents" $ do
-          outputToFile "teste"
-          teste <- inputFromFile "output.txt"
+          output (Local "teste")
+          teste <- input (Local "output.txt")
           teste `shouldBe` "teste"
 
     context "StringOperatorsModule.unCapitalize" $ do

@@ -1,10 +1,15 @@
-module IOModule
-(   inputFromFile
-,   outputToFile
-) where
+module IOModule where
 
-inputFromFile :: String -> IO String
-inputFromFile fileName = readFile fileName
+data Local = Local String
 
-outputToFile :: String -> IO ()
-outputToFile content = writeFile "output.txt" content
+class Input a where
+    input :: a -> IO String
+
+class Output a where
+    output :: a -> IO ()
+
+instance Input Local where
+    input (Local a) = readFile a
+
+instance Output Local where
+    output (Local content) = writeFile "output.txt" content
